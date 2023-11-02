@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * depth - get the depth of the tree.
+ * get_depth - get the depth of the tree.
  *
  * @tree: pointer to the root of the tree.
  *
@@ -47,7 +47,7 @@ int is_perfect(const binary_tree_t *tree, size_t depth, size_t tree_depth)
 	if (depth == tree_depth && (tree->left == NULL && tree->right == NULL))
 		return (1);
 	if (tree->left != NULL && tree->right != NULL)
-		return (is_perfect(tree->right, depth + 1, tree_depth) && 
+		return (is_perfect(tree->right, depth + 1, tree_depth) &&
 			is_perfect(tree->left, depth + 1, tree_depth));
 	return (0);
 }
