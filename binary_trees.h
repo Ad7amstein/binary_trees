@@ -34,5 +34,6 @@ int is_perfect(const binary_tree_t *tree, size_t depth, size_t tree_depth);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 size_t get_depth(const binary_tree_t *tree);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
+void binary_tree_delete(binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
