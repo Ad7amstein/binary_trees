@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_t - function to retreive the binary tree sibling
+ * binary_tree_sibling - function to retreive the binary tree sibling
  * @node: the node to get its sibling
  * Return: the sibling node or NULL otherwise
 */
