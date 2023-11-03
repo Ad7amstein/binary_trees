@@ -11,10 +11,10 @@ size_t helper(const binary_tree_t *tree, const binary_tree_t *root)
 {
 	size_t hl, hr;
 
-        if (tree == NULL)
-                return (0);
-        hl = helper(tree->left, root) + 1;
-        hr = helper(tree->right, root) + 1;
+	if (tree == NULL)
+		return (0);
+	hl = helper(tree->left, root) + 1;
+	hr = helper(tree->right, root) + 1;
 
 	if (tree == root)
 		return (hl >= hr ? hl - 1 : hr - 1);
