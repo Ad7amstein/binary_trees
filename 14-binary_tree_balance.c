@@ -10,6 +10,7 @@
 size_t helper(const binary_tree_t *tree, const binary_tree_t *root)
 {
 	size_t hl, hr;
+
 	if (tree == NULL)
 		return (0);
 	hl = helper(tree->left, root) + 1;
